@@ -7,10 +7,8 @@
   background-color: pink;
 }
 
-/* .board {
-  grid-template: 1fr;
-} */
-
 .board_space {
   border: 1px solid black;
+  font-size: 100px;
+  text-align: center;
 }

@@ -9,6 +9,10 @@ class Board {
     ]
   };
 
+    makeMove(x, y, sym) {
+      this.grid[x][y] = sym;
+  };
+
 };
 
 let dispBoard = new Board();
@@ -17,6 +21,7 @@ doc.addEventListener('DOMContentLoaded', () => {
 
 // grab board container
   let container = doc.querySelector('.board_cont');
+  let turnCount = 1;
 
 // function to create empty spaces for board
   const makeSpaces = () => {
@@ -36,6 +41,17 @@ doc.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  container.addEventListener('click', (event) => {
+    // when space is clicked, change to symbol
+    let selectedSpace = event.target;
+    let x = Number(selectedSpace.id[0]);
+    let y = Number(selectedSpace.id[1]);
+    let sym = turnCount % 2 === 0 ? 'x' : 'o'; // changing symbol
+
+    dispBoard.makeMove(x, y);
+    selectedSpace.innerText = sym;
+    turnCount++;
+  });
 
 
 });
