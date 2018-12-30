@@ -1,7 +1,10 @@
+import React from 'react';
+
 let doc = document;
 
-class Board {
+class Board extends React.Component {
   constructor() {
+    super();
     this.grid = [
       ['', '', ''],
       ['', '', ''],
@@ -56,4 +59,4 @@ doc.addEventListener('DOMContentLoaded', () => {
 
 });
 
-// export default Board;
+export default Board;
