@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lavender;
+  display: flex;
+  flex-direction: column;
+}
+
+div a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.construction {
+  align-self: center;
+  width: 60%;
+  text-align: center;
+}
+
+
+.header {
+  display: flex;
+  height: 200px;
+  background: rgba(#000, #000, #000, 0.5);
+  justify-content: center;
+  text-align: center;
+  opacity: 0.5;
+}
+
+h1 {
+  font-size: 90px;
+  font-color: black;
+  font-family: "Teutonic3";
+}
+
+#ig, #twit, #spotify, #itunes {
+  height: 2em;
+}
+
+#flower_bg {
+  margin-top: -10px;
+  margin-left: -5px;
+  z-index: -1;
+  position: fixed;
+  opacity: 0.3;
+  width: 70%;
+  height: 700px;
+}
+
+@fontface {
+  font-family: "Vinque";
+  src: url("./fonts/vinque.ttf");
+  src: url("./fonts/vinque.ttf")format("ttf");
+}
