@@ -3,17 +3,63 @@
   <head>
     <meta charset="utf-8" />
     <script type="text/javascript" src="./script.js"></script>
+
+</script>
     <link href="./style.css" rel="stylesheet" />
     <title>Chuckthegreat</title>
   </head>
+
   <body>
     <img id="flower_bg" src="./img/flower_texture.png" />
 
     <div class="header">
-      <h1>CHUCKTHEGREAT</h1>
+      <h1>ChuckTheGreat</h1>
+    </div>
+
+<!-- MENU -->
+
+    <div class="menu_container">
+      <div class="menu_tab"></div>
+      <div class="menu">
+          <li id="abt">About</li>
+          <li id="gal">Gallery</li>
+          <li id="shop">Shop</li>
+          <li id="mus">Music</li>
+          <li id="loc">Locations</li>
+          <li id="cont">Contact</li>
+      </div>
     </div>
 
     <div class="container">
+
+<!-- PLAYLIST -->
+
+      <div class="playlist_container">
+          <div class="column add-bottom">
+              <div id="mainwrap">
+                  <div id="nowPlay">
+                      <span id="npAction">Paused...</span><span id="npTitle"></span>
+                  </div>
+                  <div id="audiowrap">
+                      <div id="audio0">
+                          <audio id="audio1" preload controls>Your browser does not support HTML5 Audio! 😢</audio>
+                      </div>
+                      <div id="tracks">
+                          <a id="btnPrev">&larr;</a><a id="btnNext">&rarr;</a>
+                      </div>
+                  </div>
+                  <div id="plwrap">
+                      <ul id="plList"></ul>
+                  </div>
+              </div>
+          </div>
+          <div class="column add-bottom center">
+
+          </div>
+      </div>
+
+<!-- CONSTRUCTION -->
+
     <div class="construction">
       <h2>Under Construction</h2>
       <p>
