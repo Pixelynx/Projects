@@ -1,5 +1,10 @@
 // Mythium Archive: https://archive.org/details/mythium/
 
+class Plyr {
+  constructor(){
+    // ...IDK why this workes...
+  }
+}
 
 jQuery(function ($) {
     'use strict'
