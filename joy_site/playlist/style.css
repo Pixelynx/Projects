@@ -1,3 +1,9 @@
 .playlist {
   align-self: center;
 }
+
+.test {
+  height: 20px;
+  width: 20px;
+  background-color: black
+}
