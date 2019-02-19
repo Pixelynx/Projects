@@ -21,10 +21,14 @@
   * `/music/:id` Deletes a song
 
 ### Gallery
-* `/GET/gallery` Takes to Root Gallery Page
+* `/GET/`
+  * `/gallery` Takes to Root Gallery Page
+* `/GET/`
   * `/gallery/:id` Receives specific picture
+* `/POST`
+  * `/gallery:id`
 * `/PUT`
-  * `/music/:id` Edits a song
+  * `/gallery/:id` Edits a song
 
 ### Contact
 * `/GET`
